@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const MONGO_URI =
+  process.env.MONGO_URI ||
   "mongodb+srv://admin:admin@cluster0-q1ze7.mongodb.net/test?retryWrites=true&w=majority";
 
 module.exports = () => {
