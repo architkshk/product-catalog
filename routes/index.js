@@ -1,13 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const { getAllProducts } = require("../controllers").productController;
+const { filterProducts } = require("../controllers").productController;
 
-router.route("/products").get(getAllProducts);
+router.route("/products/?").get(filterProducts);
 
 router.route("/").get((req, res) => {
   res.json({
-    message:
-      "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."
+    message: "Welcome to Product Catalog."
   });
 });
 

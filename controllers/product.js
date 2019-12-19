@@ -11,7 +11,7 @@ const addProduct = async (req, res) => {
     await product.save();
     category.products.push(product._id);
     await category.save();
-    res.send(product);
+    res.send({ product });
   } catch (error) {
     res.status(500).send(error);
   }
