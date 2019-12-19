@@ -23,7 +23,10 @@ Open a terminal and run the following
 
 - `npm start`
 
-The server will start and you can use Postman to use the APIs.
+The server will start at port 3000 and you can use Postman to use the APIs.
+
+The API is deployed at `https://pro-cat.herokuapp.com/`
+You can also use this.
 
 ## Testing
 
